@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "type": "entity",
+      "entityType": "Repository",
+      "name": "lal-ye/goose",
+      "observations": [
+        "This is the main repository for the Goose project.",
+        "Contains tool aliases in the `goose-memory/tool_aliases.txt` file."
+      ]
+    },
+    {
+      "type": "entity",
+      "entityType": "ToolAliases",
+      "name": "Goose Tool Aliases (Memory)",
+      "observations": [
+        "A list of tool aliases currently loaded in Goose's memory.",
+        "Maintained for quick access and command execution."
+      ]
+    },
+    {
+      "type": "entity",
+      "entityType": "Directory",
+      "name": "sessions (GitHub)",
+      "observations": [
+        "This directory in the lal-ye/goose repository stores session summaries.",
+        "Contains Markdown files with records of Goose sessions."
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "type": "relation",
+      "from": "lal-ye/goose",
+      "relationType": "contains",
+      "to": "Goose Tool Aliases (Memory)"
+    },
+    {
+      "type": "relation",
+      "from": "sessions (GitHub)",
+      "relationType": "mirrors",
+      "to": "session_summaries (Memory)"
+    }
+  ]
+}
